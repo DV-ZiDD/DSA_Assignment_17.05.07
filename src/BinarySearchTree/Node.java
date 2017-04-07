@@ -24,11 +24,16 @@ public class Node {
 
     public void display() {
         // Displays the node ’s content and its children ’s contents
-        System.out.println("Node{" + "data=" + data + ", left=" + left + ", right=" + right + '}');
+        // System.out.println("Node{" + "data=" + data + ", left=" + left + ", right=" + right + '}');
+        System.out.println("N = " + data + ", L = " + left + ", R = " + right + "");
+        // N = Node’s content, L = Left child’s content, R = Right child’s content 
     }
     
     public void swapChildren(){
         // Swaps the left and right childen of the node
+        Node tempNode = this.left;
+        this.left = this.right;
+        this.right = tempNode;
     }
     
 }
